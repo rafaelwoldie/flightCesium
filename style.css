@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+
+  user-select: none; /* Standard property */
+  -webkit-user-select: none; /* For Safari and older versions of Chrome */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  touch-action: none;
+  overflow: hidden;
+}
+.message {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: white;
+}
+body {
+  margin: 0px;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.thumbstick.leftThumbstick{
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+}
+.thumbstick.rightThumbstick{
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+    transform: translateY(-50%);
+
+}
+
+.thumbstick {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 20px solid #fff3;
+  display: grid;
+  place-items: center;
+}
+
+.thumbRest {
+  width: 24px;
+  aspect-ratio: 1;
+  background-color: #333d;
+  border-radius: 50%;
+}
+#cesiumContainer {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+.message{
+  background: transparent;
+}
+.info{
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #0005;
+  color: white;
+}

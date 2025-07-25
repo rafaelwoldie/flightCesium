@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vanilla JS Thumbsticks</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.113/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.113/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+
+</head>
+<body>
+  <script>  const accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5OGYyYWE5MC0wNTI4LTQ4YWMtOTJkZS0wNzBkNjNkZDBjZTIiLCJpZCI6MzIwNTM3LCJpYXQiOjE3NTMxNzU4ODh9.ndSxumazaGAatCHURdSVSRXwzr0UM-8K8T6IGLMMdlY"
+</script>
+  <div id="cesiumContainer"></div>
+  <div class="control">
+    <div class="message">
+      <input type="range" />
+      <p class="info">info</p></div>
+
+    <div class="thumbstick leftThumbstick">
+      <div class="thumbRest leftThumbRest"></div>
+    </div>
+
+    <div class="thumbstick rightThumbstick">
+      <div class="thumbRest rightThumbRest"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
